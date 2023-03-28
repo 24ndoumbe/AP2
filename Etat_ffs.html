@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>etat_ff</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>libelle</span>
+  )
+</div>
+<div>
+  <span class='relation'>fiche</span> (
+    <span class='primary'>id_fiche qu_nuitee</span>,
+    <span class='normal'>qu_repas</span>,
+    <span class='normal'>qu_km</span>,
+    <span class='normal'>date</span>,
+    <span class='normal'>fk_matricule</span>,
+    <span class='foreign'>ag_matricule</span>,
+    <span class='foreign'>id</span>
+  )
+</div>
+<div>
+  <span class='relation'>agent</span> (
+    <span class='primary'>ag_matricule</span>,
+    <span class='normal'>ag_nom</span>,
+    <span class='normal'>ag_prenom</span>,
+    <span class='normal'>ag_login</span>,
+    <span class='normal'>ag_passwrd</span>,
+    <span class='foreign'>visiteur</span>
+  )
+</div>
+<div>
+  <span class='relation'>type_agent</span> (
+    <span class='primary'>visiteur</span>,
+    <span class='normal'>comptable</span>
+  )
+</div>
+<div>
+  <span class='relation'>autre_frais</span> (
+    <span class='primary'>id_at</span>,
+    <span class='normal'>af_date</span>,
+    <span class='normal'>af_libelle</span>,
+    <span class='normal'>af_montant</span>,
+    <span class='normal'>date_ajout</span>,
+    <span class='foreign'>id_fiche qu_nuitee</span>,
+    <span class='foreign'>id_etat</span>
+  )
+</div>
+<div>
+  <span class='relation'>etat_af</span> (
+    <span class='primary'>id_etat</span>,
+    <span class='normal'>libelle</span>
+  )
+</div>
+</div>
+</body>
+</html>

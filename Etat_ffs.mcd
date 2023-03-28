@@ -1,0 +1,14 @@
+etat_ff: id, libelle
+est1, 0N etat_ff, 11 fiche
+fiche: id_fiche qu_nuitee, qu_repas,qu_km, date, fk_matricule
+remplie, 11 fiche, 0N agent
+agent: ag_matricule, ag_nom, ag_prenom, ag_login, ag_passwrd
+est2, 11 agent, 0N type_agent
+type_agent: visiteur, comptable
+
+possede, 0N fiche, 11 autre_frais
+
+autre_frais: id_at, af_date, af_libelle, af_montant, date_ajout
+est3, 11 autre_frais, 0N etat_af
+etat_af: id_etat, libelle
+
