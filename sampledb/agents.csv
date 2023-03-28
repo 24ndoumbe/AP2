@@ -1,0 +1,7 @@
+"ag_MATRICULE";"ag_login";"ag_password";"ag_nom";"ag_prenom";"se_fk";"ta_fk"
+1;"laurent.dupont";"lolo";"DUPONT";"Laurent";1;1
+2;"alain.renault";"al";"RENAULT";"Alain";8;1
+3;"louise.martin";"lou";"MARTIN";"Louise";5;1
+4;"jean.petit";"jeanjean";"PETIT";"Jean";1;2
+5;"charlotte.dubois";"charlotte";"DUBOIS";"Charlotte";8;2
+6;"elise.leroy";"king";"LEROY";"Elise";5;2
